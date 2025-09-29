@@ -1,0 +1,27 @@
+<ion-content>
+  <app-menu-tabs></app-menu-tabs>
+  <div class="container">
+    <div class="profile-info">
+      <ion-avatar class="avatar">
+        <ion-col class="div-imagen"  >
+          <img class="imagen" alt="Fotografía de perfil" [src]="photoService.photos.length > 0 ? photoService.photos[0].WebViewPath : 'https://ionicframework.com/docs/img/demos/avatar.svg'"  />
+        </ion-col>
+      </ion-avatar>
+      <div *ngIf="users" >
+        <u class="usuario">{{users.username}}</u>
+        <p class="edad">{{users.age}}</p>
+        <p class="edad">{{users.name}}</p>
+        <p class="edad">{{users.carrera}}</p>
+        <p class="descripcion">{{users.email}}</p>
+        <p class="descripcion">{{users.description}}</p>
+
+      </div>
+    </div>
+    <ion-buttons class="btn-maches"> 
+      <button (click)="EditarPerfil()" class="btn btn-duoc1">Editar Perfil</button>
+      <button (click)="CompartirPerfil()" class="btn btn-duoc1">Compartir Perfil</button>
+    </ion-buttons>
+  </div> 
+</ion-content>
+<!-- Aquí es donde colocas el menu-tabs -->
+  

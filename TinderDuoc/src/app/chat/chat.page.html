@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-button [routerLink]="['/mensajes']">Volver</ion-button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <div class="container">
+    <ion-list [inset]="true">
+      
+      <!-- Mensaje recibido -->
+      <ion-item-sliding>
+        <ion-item [button]="true">
+          <ion-avatar aria-hidden="true" slot="start">
+            <img src="https://i.pinimg.com/564x/75/25/00/75250026530eae46ecf7adbf7569209d.jpg" />
+          </ion-avatar>
+          <ion-label>
+            <strong>Sebastian Ramirez</strong>
+            <br/>
+            <ion-note color="medium" class="ion-text-wrap">
+              Hola Karlita.
+            </ion-note>
+          </ion-label>
+        </ion-item>
+      </ion-item-sliding>
+      
+      <!-- Mensaje enviado -->
+      <ion-item-sliding>
+        <ion-item [button]="true" class="ion-text-right">
+          <ion-label class="ion-text-right">
+            <strong>Tú</strong>
+            <br/>
+            <ion-note color="primary" class="ion-text-wrap">
+              ¡Hola, Sebastián! ¿Cómo estás?
+            </ion-note>
+          </ion-label>
+        </ion-item>
+      </ion-item-sliding>
+      
+      <!-- Más mensajes recibidos -->
+      <ion-item-sliding>
+        <ion-item [button]="true">
+          <ion-avatar aria-hidden="true" slot="start">
+            <img src="https://i.pinimg.com/564x/75/25/00/75250026530eae46ecf7adbf7569209d.jpg" />
+          </ion-avatar>
+          <ion-label>
+            <strong>Sebastian Ramirez</strong>
+            <br/>
+            <ion-note color="medium" class="ion-text-wrap">
+              Todo bien, gracias. ¿Y tú?
+            </ion-note>
+          </ion-label>
+        </ion-item>
+      </ion-item-sliding>
+
+    </ion-list>
+  </div>
+</ion-content>
+
+<!-- Caja de entrada de texto para enviar mensajes -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-input placeholder="Escribe un mensaje..."></ion-input>
+      <ion-button slot="end" color="primary">
+        Enviar
+      </ion-button>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>

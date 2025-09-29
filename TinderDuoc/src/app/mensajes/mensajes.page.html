@@ -1,0 +1,27 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Mensajes</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content color="light" class="container">
+  <app-menu-tabs></app-menu-tabs>
+
+  <ion-list [inset]="true">
+    <ion-item-sliding>
+      <ion-item [button]="true" [routerLink]="['/chat']">
+        <ion-avatar aria-hidden="true" slot="start">
+          <img src="https://i.pinimg.com/564x/75/25/00/75250026530eae46ecf7adbf7569209d.jpg" />
+        </ion-avatar>
+        <ion-label>
+          <strong>Sebastian Ramirez</strong>
+          <br/>
+          <ion-note color="medium" class="ion-text-wrap">
+            Hola karlita.
+          </ion-note>
+        </ion-label>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+  
+</ion-content>

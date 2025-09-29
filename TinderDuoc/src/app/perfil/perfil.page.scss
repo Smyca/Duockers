@@ -1,0 +1,64 @@
+.container{
+  position: absolute;
+  top:0;
+  height: calc(100vh - 60px) ;
+  left: 2.5%;
+  right: 2.5%;
+  text-align: center;
+}
+.avatar{
+  margin: auto;
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+}
+.imagen{
+  object-fit: cover;
+  border-radius: 100%;
+  border: solid 2px #d1971b;
+  width: 200px;
+  height: 200px;
+}
+.profile-info{
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: calc(100% - 60px - 40px) ;
+}
+.usuario{
+  font-weight: 600;
+  color: #d1971b;
+  margin: 0;
+  font-size: 22px;
+}
+.profile-info p {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+.profile-info .nombre{
+  color: #d1971b;
+}
+.profile-info .edad{
+  color: #d1971b;
+}
+.profile-info .descripcion{
+  font-style: italic;
+  text-align: justify;
+  color: #b3b3b3;
+  padding-inline: 10%;
+}
+.btn{
+  font-size: 0.95em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.btn-maches{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+

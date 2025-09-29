@@ -1,0 +1,49 @@
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: calc(100% - 50px);
+    height: 100vh;
+ }
+ .login{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 25%;
+    
+ }
+ 
+ 
+ 
+ .sin-cuenta{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-weight: 200;
+ }
+ .link-simple a{
+    font-weight: 500;
+    color: #2867c7;
+ }
+ 
+ .container a{
+     text-align: center;
+ }
+ 
+ 
+ .buttons-groups{
+    margin-top: 10px;
+    display: flex;
+ }
+ .buttons-groups .btn{
+    margin-inline: 5px;
+    // margin-inline-start: 5px;
+    // margin-inline-end: 5px;
+ }
+ .sub-texto{
+    font-size: 20px;
+    color: #c7b428;
+    text-align: center;
+    margin-bottom: 30%;
+ }

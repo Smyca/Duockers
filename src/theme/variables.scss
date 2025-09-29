@@ -1,0 +1,198 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+	/*Obscuro casi negro*/
+	--ion-color-duoc0: #1a1a1a;
+	--ion-color-duoc0-rgb: 26,26,26;
+	--ion-color-duoc0-contrast: #ffffff;
+	--ion-color-duoc0-contrast-rgb: 255,255,255;
+	--ion-color-duoc0-shade: #171717;
+	--ion-color-duoc0-tint: #313131;
+	/*Amarillo*/
+	--ion-color-duoc1: #ffb800;
+	--ion-color-duoc1-rgb: 255,184,0;
+	--ion-color-duoc1-contrast: #000000;
+	--ion-color-duoc1-contrast-rgb: 0,0,0;
+	--ion-color-duoc1-shade: #e0a200;
+	--ion-color-duoc1-tint: #ffbf1a;
+	/*Celeste*/
+	--ion-color-duoc3: #307fe2;
+	--ion-color-duoc3-rgb: 48,127,226;
+	--ion-color-duoc3-contrast: #000000;
+	--ion-color-duoc3-contrast-rgb: 0,0,0;
+	--ion-color-duoc3-shade: #0d3877;
+	--ion-color-duoc3-tint: #05142b;
+	/*Gris*/
+	--ion-color-duoc2: #c2c2c2;
+	--ion-color-duoc2-rgb: 194,194,194;
+	--ion-color-duoc2-contrast: #000000;
+	--ion-color-duoc2-contrast-rgb: 0,0,0;
+	--ion-color-duoc2-shade: #ababab;
+	--ion-color-duoc2-tint: #c8c8c8;
+}
+*{
+	font-family: "Poppins", system-ui; 
+}
+ion-toolbar{
+    background-color: var(--ion-color-duoc0);
+}
+.titulo{
+    
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+	color: var(--ion-color-duoc1);
+}
+.sub-titulo{
+    
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9em;
+	color: var(--ion-color-duoc3-tint);
+}
+.link-simple a{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9em;
+	color: var(--ion-color-duoc2-tint);
+	text-decoration: none;
+}
+.link-simple{
+	margin-bottom: 15px;
+}
+/*--- Formato para inputs ---*/
+.input-field{
+    position: relative;
+	margin-top: 15px;
+}
+.input-field input, .input-field textarea{
+    width: 100%;
+    border-radius: 15px;
+    font-size: 1em;
+	
+	font-weight: 200;
+	padding: 15px 14px;
+	// border: 2px solid var(--ion-color-duoc1);
+	border: 2px solid var(--ion-color-duoc2);
+	background: transparent;
+	color: var(--ion-color-duoc2);
+	outline: none;
+}
+.input-field label{
+	position: absolute;
+	top:100%;
+	left: 15px;
+	transform: translateY(-40px);
+	
+	font-weight: 200;
+	color: var(--ion-color-duoc2-shade);
+	font-size: 1.10em;
+	pointer-events: none;
+	transition: .3s;
+}
+.input-field input:focus, .input-field textarea:focus{
+	border: 2px solid var(--ion-color-duoc1-shade);
+}
+.input-field input:focus ~ label,
+.input-field input:valid ~ label,
+.input-field textarea:focus ~ label,
+.input-field textarea:valid ~ label
+
+{
+	top: 27px;
+	font-size: 1.05em;
+	font-weight: 300;
+	padding: 0 5px;
+	background: var(--ion-color-duoc1-shade);
+	// background: transparent;
+	color: black;
+	border-radius: 25px;
+}
+.input-field input:valid, .input-field textarea:valid{
+	border-color: var(--ion-color-duoc2-shade);
+}
+
+
+.btn{
+    width: 100%; 
+    padding: 15px;
+    border-radius: 15px;
+    
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85em;
+    margin-bottom: 15px;
+}
+.btn-duoc1{
+    background-color: var(--ion-color-duoc1-shade);
+    color: var(--ion-color-duoc1-contrast);
+}
+.btn-outline-duoc1{
+    background-color: transparent;
+    border:solid 1px var(--ion-color-duoc1);
+    color: var(--ion-color-duoc1);    
+}
+.btn-duoc2{
+    background-color: var(--ion-color-duoc2-shade);
+    color: var(--ion-color-duoc2-contrast);
+}
+.btn-outline-duoc2{
+    background-color: transparent;
+    border:solid 1px var(--ion-color-duoc2);
+    color: var(--ion-color-duoc2);    
+}
+.btn-duoc3{
+    background-color: var(--ion-color-duoc3-shade);
+	border-color: var(--ion-color-duoc3-tint) !important;
+    color: white;
+	font-size: 15px;
+}
+.btn-outline-duoc3{
+    background-color: transparent;
+    border:solid 1px var(--ion-color-duoc3);
+    color: var(--ion-color-duoc3);    
+}
+.btn-like{
+	background-color: rgb(42, 196, 42);
+	border: solid 2px rgb(158, 255, 131) !important;
+	border-radius: 15px;
+	margin-left: 3px;
+	// border-top-right-radius: 15px;
+	// border-bottom-right-radius: 15px;
+	color: rgb(169, 255, 145);
+}
+.btn-dislike{
+	background-color: rgb(212, 40, 40);
+	border: solid 2px rgb(255, 146, 146) !important;
+	border-radius: 15px;
+	margin-right: 3px;
+	// border-top-left-radius: 15px;
+	// border-bottom-left-radius: 15px;
+	color: rgb(255, 184, 184);
+}
+
+
+.btn {
+    border: solid black 2px;
+    // margin: 1px;
+    // background-color: #dfa019;
+    // color: black;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); /* Sombra suave */
+    transition: box-shadow 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada al hacer hover */
+}
+// .full-card {
+// 	height: 85vh; /* 100% de la altura de la pantalla */
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-between;
+// 	padding: 0;
+//   }
+//   ion-card-header,
+// ion-card-content {
+//   padding: 16px;
+// }

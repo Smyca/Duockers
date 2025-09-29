@@ -1,0 +1,35 @@
+.container{
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: url('https://i.pinimg.com/564x/cd/7b/d3/cd7bd333ad2c0fbc9050fb009b8870f2.jpg');
+    // height: 100px;
+  }
+  .container a{
+    text-align: center;
+  }
+  .btn-filtrarBusqueda{
+    margin-top:30px;
+    margin-bottom: 30px;
+  }
+  .full-card{
+    padding-block: 50px;
+    // background-color: red;
+  }
+  .btn-maches{
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    right: 15px;
+  }
+  ion-list.md.list-md.list-inset.hydrated{
+    background: #00000085;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    place-content: end
+  }

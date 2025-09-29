@@ -1,0 +1,70 @@
+<ion-content [scrollY]="false">
+  <app-menu-tabs></app-menu-tabs>
+
+  <div class="container">
+
+ 
+
+    <button (click)="Filtrar()" class="btn-filtrarBusqueda btn btn-duoc3"><ion-icon name="filter"></ion-icon> Filtrar Búsqueda</button>
+
+   
+    <swiper-container class="cards-personas">
+      @for(user of users; track user.id){
+      <swiper-slide class="slide">
+        <ion-card class="full-card" style="text-align: center;">
+          <img alt="Foto de Matches" class="imagen-persona" [src]="user.photo ? user.photo: 'https://ionicframework.com/docs/img/demos/avatar.svg'"/>
+          
+          <ion-card-header>
+            <ion-card-title class="name-persona">{{user.username}}</ion-card-title>
+            
+            <ion-card-subtitle class="carrera-persona">{{user.carrera}}</ion-card-subtitle>
+            <ion-card-title class="name-persona">{{user.name}}</ion-card-title>
+            <ion-card-title class="name-persona">{{user.age}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="descripcion-persona">
+            {{user.description}}
+          </ion-card-content>
+          <ion-buttons class="btn-maches">
+            <button class="btn btn-dislike"><ion-icon name="heart-dislike-outline"></ion-icon></button>
+            <button class="btn btn-like"><ion-icon name="heart-outline"></ion-icon></button>
+          </ion-buttons>
+        </ion-card>
+      </swiper-slide>
+
+
+
+
+      }
+    </swiper-container>
+    
+  </div>
+
+
+
+
+
+
+</ion-content>
+
+
+
+<!-- <ion-content>
+  <app-menu-tabs></app-menu-tabs>
+  <div class="container">
+    <button (click)="Filtrar()" class="btn btn-duoc3">Editar Perfil</button>
+  
+    <ion-buttons class="btn-maches"> 
+      
+      <button (click)="Filtrar()" class="btn btn-duoc3">Compartir Perfil</button>
+    </ion-buttons>
+  </div> 
+</ion-content> -->
+<!-- Aquí es donde colocas el menu-tabs -->
+  
+
+
+
+<!-- Aquí es donde colocas el menu-tabs -->
+<!-- <ion-content> -->
+
+<!-- </ion-content> -->

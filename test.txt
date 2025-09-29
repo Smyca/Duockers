@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+hola mundo s
+=======
+hola mundo 2
+>>>>>>> a18447404e32225ced3a7ecf933ce735cf9aaf52

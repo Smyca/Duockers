@@ -1,0 +1,57 @@
+<ion-content>
+  <div class="container">
+    <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+
+      <h1 class="login">Crear cuenta</h1>
+      <div class="input-field">
+        <input formControlName="user" [(ngModel)]="usuario" type="text" required spellcheck="false">
+        <label>Nombre de usuario*</label>
+      </div>
+      <div class="input-field">
+        <input formControlName="email" [(ngModel)]="correoElectronico" type="email" required spellcheck="false">
+        <label>Correo electrónico*</label>
+      </div>
+      
+
+      <div class="input-field">
+        <input formControlName="password" [(ngModel)]="password" type="password" required spellcheck="false">
+        <label>Contraseña*</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required spellcheck="false">
+        <label>Confirmar contraseña*</label>
+      </div>
+
+      <div class="link-red">
+        <a>Campos requeridos (*)</a>
+      </div>
+      <button type="submit" (click)="crearCuenta()" class="btn btn-duoc3">Crear cuenta</button>
+
+    </form>
+
+    <div class="link-simple sin-cuenta">
+      Ya tienes una cuenta?
+      <a [routerLink]="['/sign-in']">Iniciar sesión</a>
+    </div>
+
+  </div>
+</ion-content>
+
+
+
+
+
+<!-- <ion-content>
+  <div class="container">
+    <h1 class="login">Inicio Sesión</h1>
+
+    <div class="link-simple">
+      <a [routerLink]="['/forgotten-pswd']">¿Olvidaste tu contraseña?</a>
+    </div>
+    <button (click)="IniciarSesion()" class="btn btn-duoc3">Iniciar sesión</button>
+    <div class="link-simple sin-cuenta">
+      No tienes una cuenta?
+      <a [routerLink]="['/sign-up']">Crear Cuenta</a>
+    </div>
+  </div>
+</ion-content> -->
